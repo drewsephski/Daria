@@ -79,13 +79,11 @@ const generateImage = async (input: GenerateInput): Promise<string | null> => {
       aspectRatio: input.aspectRatio,
     });
 
-    const result = await fal.subscribe("fal-ai/flux-pro/v1.1-ultra", {
+    const result = await fal.subscribe("xai/grok-imagine-image", {
       input: {
         prompt: input.prompt,
         aspect_ratio: input.aspectRatio,
         num_images: 1,
-        enable_safety_checker: true,
-        output_format: "png",
       },
       logs: true,
       onQueueUpdate: (update) => {

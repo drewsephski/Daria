@@ -5,6 +5,7 @@ import ReasonCard from './components/ReasonCard';
 import ComplimentGenerator from './components/ComplimentGenerator';
 import ApplicationForm from './components/ApplicationForm';
 import AboutMe from './components/AboutMe';
+import ImageStudio from './components/ImageStudio';
 import Button from './components/Button';
 import { REASONS } from './constants';
 
@@ -28,6 +29,7 @@ const App: React.FC = () => {
             <span className="font-bold text-xl text-gray-800 tracking-tight font-display">Daria.</span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm font-bold text-gray-600">
+            <button onClick={() => scrollToSection('studio')} className="hover:text-pink-500 transition-colors">Studio</button>
             <button onClick={() => scrollToSection('about')} className="hover:text-pink-500 transition-colors">The Lore</button>
             <button onClick={() => scrollToSection('reasons')} className="hover:text-pink-500 transition-colors">Why You're Cool</button>
             <button onClick={() => scrollToSection('affirmations')} className="hover:text-pink-500 transition-colors">Affirmations</button>
@@ -76,6 +78,9 @@ const App: React.FC = () => {
             </motion.div>
         </div>
       </section>
+
+      {/* Image Studio Section */}
+      <ImageStudio />
 
       {/* About Section */}
       <AboutMe />

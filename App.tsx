@@ -31,8 +31,8 @@ const App: React.FC = () => {
         <div className="hidden md:flex items-center gap-8 text-sm font-bold text-gray-600">
             <button onClick={() => scrollToSection('studio')} className="hover:text-pink-500 transition-colors">Studio</button>
             <button onClick={() => scrollToSection('about')} className="hover:text-pink-500 transition-colors">The Lore</button>
-            <button onClick={() => scrollToSection('reasons')} className="hover:text-pink-500 transition-colors">Why You're Cool</button>
-            <button onClick={() => scrollToSection('affirmations')} className="hover:text-pink-500 transition-colors">Affirmations</button>
+            <button onClick={() => scrollToSection('reasons')} className="hover:text-pink-500 transition-colors">The Vibes</button>
+            <button onClick={() => scrollToSection('affirmations')} className="hover:text-pink-500 transition-colors">Validation</button>
             <button onClick={() => scrollToSection('contact')} className="hover:text-pink-500 transition-colors">Inquiries</button>
         </div>
         <Button variant="primary" className="md:hidden !px-3 !py-2 text-xs" onClick={() => scrollToSection('contact')}>
@@ -55,24 +55,24 @@ const App: React.FC = () => {
                 transition={{ duration: 0.8 }}
             >
                 <div className="inline-block bg-pink-100 text-pink-600 px-4 py-1.5 rounded-full text-sm font-bold mb-6 border border-pink-200 shadow-sm">
-                    ⚠️ Warning: Excessive Charm Detected
+                    ⚠️ Warning: Highly Addictive Personality
                 </div>
                 <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 font-display leading-tight">
                     Welcome to the <br/>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">Daria Fan Club</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">Daria Experience</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-                    A digital shrine dedicated to the person who has mastered the art of being effortlessly cool, moderately funny, and exceptionally pink.
+                    A digital shrine to the person who has mastered the art of being effortlessly cool, casually hilarious, and exceptionally pink.
                 </p>
                 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                     <Button onClick={() => scrollToSection('about')}>
-                        See the Evidence
+                        View The Evidence
                         {/* Animated content: Arrow moves down on hover */}
                         <ArrowDown className="w-4 h-4 ml-1 group-hover:translate-y-1 transition-transform duration-300" />
                     </Button>
                     <Button variant="secondary" onClick={() => scrollToSection('contact')}>
-                        Schedule Appointment
+                        Shoot Your Shot
                     </Button>
                 </div>
             </motion.div>
@@ -89,9 +89,9 @@ const App: React.FC = () => {
       <section id="reasons" className="py-24 px-6 bg-pink-50/50 relative">
          <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-display">Scientific Proof of Awesomeness</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-display">Why She's Your Favorite</h2>
                 <p className="text-gray-500 max-w-xl mx-auto">
-                    Data collected from extensive research (mostly me observing you being cool).
+                    A collection of facts that you were already thinking.
                 </p>
             </div>
             
@@ -116,19 +116,19 @@ const App: React.FC = () => {
               <div className="flex flex-col md:flex-row items-center gap-12">
                   <div className="flex-1 text-center md:text-left">
                       <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 font-display">
-                          Ready to hang out?
+                          Want to hang out?
                       </h2>
                       <p className="text-gray-600 mb-8 text-lg">
-                          Due to high demand (mostly from me), slots are filling up fast. Submit your request for a tailored experience involving snacks and questionable jokes.
+                         She's accepting applications for coffee dates, adventure buddies, and people who will buy her food. Don't be shy.
                       </p>
                       <div className="bg-pink-100 p-6 rounded-2xl border border-pink-200 inline-block">
-                          <p className="text-pink-800 font-bold text-sm mb-1 uppercase tracking-wider">Current Status</p>
+                          <p className="text-pink-800 font-bold text-sm mb-1 uppercase tracking-wider">Status</p>
                           <div className="flex items-center gap-2 text-gray-800 font-bold text-xl">
                               <span className="relative flex h-3 w-3">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                               </span>
-                              Accepting Applications
+                              Open to suggestions
                           </div>
                       </div>
                   </div>
@@ -143,11 +143,11 @@ const App: React.FC = () => {
       <footer className="bg-white py-12 border-t border-pink-100 text-center">
           <div className="container mx-auto px-6">
               <p className="flex items-center justify-center gap-2 text-gray-500 font-medium mb-4">
-                  Made with <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" /> and too much coffee
+                  Made with <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" /> and just a little bit of obsession
               </p>
               <p className="text-xs text-gray-400">
-                  © {new Date().getFullYear()} The Daria Appreciation Society. All rights reserved. <br/>
-                  No refunds on bad puns.
+                  © {new Date().getFullYear()} Daria Inc. All rights reserved. <br/>
+                  Results may vary. Batteries not included.
               </p>
           </div>
       </footer>

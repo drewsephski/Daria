@@ -39,7 +39,7 @@ const AboutMe: React.FC = () => {
                     transition={{ delay: 0.5 }}
                     className="absolute -bottom-4 -right-4 bg-white text-pink-600 text-sm font-bold px-4 py-2 rounded-full shadow-lg border border-pink-100"
                 >
-                    Top Tier Human ✨
+                    Iconic ✨
                 </motion.div>
             </div>
           </motion.div>
@@ -53,18 +53,18 @@ const AboutMe: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             <div className="inline-block px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-xs font-bold tracking-wider mb-4 uppercase">
-              The Subject
+              The Muse
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-display leading-tight">
-              A Brief <span className="text-pink-500">Analysis</span>
+              A Little <span className="text-pink-500">Context</span>
             </h2>
             
             <div className="space-y-4 text-gray-600 text-lg mb-8 leading-relaxed">
                 <p>
-                    Known for having better style than everyone else in the room and an ability to make any situation slightly more fun just by showing up.
+                    She has an ability to make any situation slightly more fun just by showing up. It's a gift, really.
                 </p>
                 <p>
-                   If you are reading this, you probably already know she is out of everyone's league. Experts (me) agree that she is pretty great.
+                   If you're reading this, you probably already know she's a catch. But in case you needed a reminder, here are the stats.
                 </p>
             </div>
 

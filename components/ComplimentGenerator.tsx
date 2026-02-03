@@ -30,7 +30,7 @@ const ComplimentGenerator: React.FC = () => {
           </motion.div>
         </div>
 
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">The Daria Daily Affirmation</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8">Your Daily Validation</h2>
 
         <div className="h-32 flex items-center justify-center mb-8">
           <AnimatePresence mode="wait">
@@ -52,7 +52,7 @@ const ComplimentGenerator: React.FC = () => {
           className="mx-auto"
         >
           <RefreshCw className={`w-4 h-4 mr-2 ${isSpinning ? 'animate-spin' : ''}`} />
-          Generate New Fact
+          Tell Me More
         </Button>
       </div>
     </div>

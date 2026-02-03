@@ -7,7 +7,7 @@ import { Send, CheckCircle } from 'lucide-react';
 const ApplicationForm: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
   const [hoverCount, setHoverCount] = useState(0);
-  const [activity, setActivity] = useState("Getting Coffee (Classic)");
+  const [activity, setActivity] = useState("Buying her coffee (Required)");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,26 +18,26 @@ const ApplicationForm: React.FC = () => {
     setHoverCount(prev => prev + 1);
   };
 
-  const noButtonText = hoverCount === 0 ? "No thanks" :
-                       hoverCount === 1 ? "Are you sure?" :
-                       hoverCount === 2 ? "Really sure?" :
-                       hoverCount === 3 ? "Don't click this" :
-                       "Okay fine";
+  const noButtonText = hoverCount === 0 ? "Pass" :
+                       hoverCount === 1 ? "You sure?" :
+                       hoverCount === 2 ? "Big mistake." :
+                       hoverCount === 3 ? "Playing hard to get?" :
+                       "Fine, your loss";
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-8 max-w-lg mx-auto border border-pink-100 relative z-10">
       {!submitted ? (
         <>
-          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Official Hangout Application</h2>
-          <p className="text-gray-500 text-center mb-8 text-sm">Strictly for professional coffee-drinking purposes.</p>
+          <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">The "Pick Me" Form</h2>
+          <p className="text-gray-500 text-center mb-8 text-sm">Fill this out correctly and she might text back.</p>
           
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Applicant Name</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
               <input 
                 type="text" 
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-pink-500 focus:ring-4 focus:ring-pink-100 outline-none transition-all"
-                placeholder="Enter your name..."
+                placeholder="Make it memorable..."
                 required
               />
             </div>
@@ -46,10 +46,10 @@ const ApplicationForm: React.FC = () => {
               <label className="block text-sm font-medium text-gray-700 mb-1">Proposed Activity</label>
               <CustomDropdown 
                 options={[
-                  "Getting Coffee (Classic)",
-                  "Getting Food (Essential)",
-                  "Walking around aimlessly", 
-                  "Watching a terrible movie"
+                  "Buying her coffee (Required)",
+                  "Dinner (You pay)",
+                  "Adventures (She picks)", 
+                  "Just vibing"
                 ]}
                 value={activity}
                 onChange={setActivity}
@@ -57,10 +57,10 @@ const ApplicationForm: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Why should I say yes?</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Why do you qualify?</label>
               <textarea 
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-pink-500 focus:ring-4 focus:ring-pink-100 outline-none transition-all h-24 resize-none"
-                placeholder="List your qualifications (e.g. 'I have a dog', 'I pay for snacks')..."
+                placeholder="Tell her something she doesn't know..."
                 required
               />
             </div>
@@ -68,7 +68,7 @@ const ApplicationForm: React.FC = () => {
             <div className="pt-4 flex gap-4">
                <Button type="submit" fullWidth className="flex-1">
                  <Send className="w-4 h-4" />
-                 Submit
+                 Apply Now
                </Button>
                
                <motion.button
@@ -97,15 +97,15 @@ const ApplicationForm: React.FC = () => {
           </div>
           <h3 className="text-2xl font-bold text-gray-800 mb-2">Application Received!</h3>
           <p className="text-gray-600">
-            Your application is being processed by the Daria Administration. <br/>
-            Expected wait time: 2-5 business minutes.
+            Her people will contact your people. <br/>
+            (She is her people).
           </p>
           <Button 
             variant="outline" 
             className="mt-8"
             onClick={() => setSubmitted(false)}
           >
-            Submit Another?
+            Try Again?
           </Button>
         </motion.div>
       )}

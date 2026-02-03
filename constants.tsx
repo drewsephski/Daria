@@ -1,68 +1,83 @@
 import React from 'react';
-import { Crown, Coffee, Sparkles, Zap, Heart, Star, MapPin, Music, GraduationCap, Utensils, AlertCircle, Smile } from 'lucide-react';
+import { Crown, Coffee, Sparkles, Zap, Heart, Star, MapPin, AlertCircle, Smile } from 'lucide-react';
 import { ReasonProps, AboutFact } from './types';
 
 export const REASONS: ReasonProps[] = [
   {
-    title: "Certified Cool™",
-    description: "Studies show a 99.9% probability of being the coolest person in the room. Margin of error: 0%.",
+    title: "Main Character Energy",
+    description: "It's not arrogance if it's true. She doesn't chase, she attracts.",
     icon: <Crown className="w-6 h-6 text-pink-500" />,
   },
   {
-    title: "Caffeine Connoisseur",
-    description: "Can distinguish between 15 types of iced lattes with eyes closed. A true talent.",
-    icon: <Coffee className="w-6 h-6 text-pink-500" />,
-  },
-  {
-    title: "Sarcasm Level: Expert",
-    description: "Fluent in three languages: English, Emoji, and rigorous Sarcasm.",
-    icon: <Zap className="w-6 h-6 text-pink-500" />,
-  },
-  {
-    title: "Vibe Curator",
-    description: "Simply existing improves the ambient mood of any location by a factor of 10.",
-    icon: <Sparkles className="w-6 h-6 text-pink-500" />,
-  },
-  {
-    title: "Smile Radiance",
-    description: "Warning: Direct eye contact with the smile may cause temporary blindness due to sheer brightness.",
+    title: "Professional Heartbreaker",
+    description: "Unintentional, usually. But let's be honest, she breaks hearts.",
     icon: <Heart className="w-6 h-6 text-pink-500" />,
   },
   {
-    title: "Playlist Wizard",
-    description: "Possesses a music taste that scientists are calling 'objectively correct'.",
+    title: "Sarcasm: Fluent",
+    description: "Her love language is teasing you until you question your reality.",
+    icon: <Zap className="w-6 h-6 text-pink-500" />,
+  },
+  {
+    title: "Vibe Technician",
+    description: "She doesn't just match the vibe, she sets it.",
+    icon: <Sparkles className="w-6 h-6 text-pink-500" />,
+  },
+  {
+    title: "Taste Level: High",
+    description: "If she likes it, it's good. If she doesn't, try harder.",
     icon: <Star className="w-6 h-6 text-pink-500" />,
+  },
+  {
+    title: "Coffee Dependent",
+    description: "She's nicer after an iced latte. Buy her one?",
+    icon: <Coffee className="w-6 h-6 text-pink-500" />,
   },
 ];
 
 export const COMPLIMENTS = [
-  "You have impeccable taste (mostly because you're reading this).",
-  "If being awesome was a crime, you'd be serving a life sentence.",
-  "Your smile could power a small city.",
-  "You're smarter than Google and prettier than a Pinterest board.",
-  "10/10 would recommend hanging out with you.",
-  "You're the human version of a pink starburst.",
+  "You have excellent taste. Obviously, you're here.",
+  "She'd probably reply to your text. Maybe.",
+  "You're almost as cool as her. Almost.",
+  "She likes your vibe. Don't ruin it.",
+  "You're doing great, sweetie.",
+  "She'd share her fries with you. That's a big deal.",
+  "Your outfit today? A solid 9/10. She's the 10, obviously.",
+  "You're the main character, but she's the director.",
+  "She'd pause her favorite song to listen to you.",
+  "You’re smarter than you look. Which she appreciates.",
+  "Her dog would probably like you. That’s high praise.",
+  "You radiate 'good decision' energy. Keep it up.",
+  "If sarcasm was a sport, you'd be teammates.",
+  "You’re not like other people. You’re tolerable.",
+  "She'd let you borrow her charger. Maybe.",
+  "You have a nice face. It suits you.",
+  "Your presence is surprisingly delightful.",
+  "She bets you have great music taste.",
+  "You’re definitely on the VIP list.",
+  "The world is lucky to have you. Especially her.",
+  "You make existing look easy."
 ];
 
 export const ABOUT_FACTS: AboutFact[] = [
   {
     label: "Current Location",
-    value: "Living rent-free in my head",
+    value: "Rent-free in your head",
     icon: <MapPin className="w-5 h-5 text-pink-500" />,
   },
   {
     label: "Superpower",
-    value: "Looking good in literally anything",
+    value: "Always right",
     icon: <Sparkles className="w-5 h-5 text-pink-500" />,
   },
   {
-    label: "Hazard Warning",
-    value: "May cause butterflies",
+    label: "Warning",
+    value: "Highly addictive",
     icon: <AlertCircle className="w-5 h-5 text-pink-500" />,
   },
   {
-    label: "Known For",
-    value: "Impeccable vibes & great hair",
+    label: "Status",
+    value: "Out of your league",
     icon: <Smile className="w-5 h-5 text-pink-500" />,
   },
 ];
